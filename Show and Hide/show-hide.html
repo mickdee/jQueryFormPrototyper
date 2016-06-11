@@ -1,0 +1,29 @@
+<html>
+	<body>
+		<div>
+			<a id="showButton" href="#">SHOW v</a>
+		</div>
+		<div id="showArea">I.O.U something important</div>
+	</body>
+	<script src="../jquery.min.js"></script>
+	<script>
+
+	$(document).ready(function(){
+
+		// Hide the expanded area by default
+		$('#showArea').hide();
+
+		// Click on the show button 
+		$('#showButton').click(function (event) {
+		    
+		    event.preventDefault();
+
+		    // Slide open the hidden area and change the button label
+			$('#showArea').slideToggle('fast');
+			$(this).text($(this).text() == 'HIDE ^' ? 'SHOW v' : 'HIDE ^');
+		});
+
+	});
+		
+	</script>
+</html>

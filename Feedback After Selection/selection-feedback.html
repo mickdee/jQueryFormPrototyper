@@ -1,0 +1,30 @@
+<html>
+	<body>
+	<label>Choose Something</label>
+		<select name="" id="itemsList">
+			<option selected='selected' disabled="disabled">Choose an Option</option>
+			<option>Bananas</option>
+			<option>Peaches</option>
+			<option>Strawberries</option>
+			<option>Blueberries</option>
+			<option>Serviceberries</option>
+			<option>Walrusberries</option>
+		</select>
+		<p>You Chose: <span id="printSelection"></span></p>
+	</body>
+	<script src="../jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			// Get the value of the selected option
+			$('#itemsList').change(function() {
+
+				var selectedOption = document.getElementById('itemsList').value;
+
+				// Print the selected option
+				$('#printSelection').html(selectedOption);
+
+			});
+
+		});
+	</script>
+</html>

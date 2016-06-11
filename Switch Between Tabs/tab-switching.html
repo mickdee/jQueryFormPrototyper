@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<style>
+			.current a {
+				color:red;
+			}
+			.tab-content {
+				display:none;
+			}
+			#tab-1 {
+				display:block;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="tabs-container">
+			<ul class="tabs-menu">
+				<li class="current"><a href="#tab-1">Tab 1</a></li>
+				<li><a href="#tab-2">Tab 2</a></li>
+				<li><a href="#tab-3">Tab 3</a></li>
+				<li><a href="#tab-4">Tab 4</a></li>
+			</ul>
+			<div class="tab">
+				<div id="tab-1" class="tab-content">tab 1 content</div>
+				<div id="tab-2" class="tab-content">tab 2 content</div>
+				<div id="tab-3" class="tab-content">tab 3 content</div>
+				<div id="tab-4" class="tab-content">tab 4 content</div>
+			</div>
+		</div>
+	</body>
+	<script src="../jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.tabs-menu a').click(function(event) {
+				event.preventDefault();
+				// Toggle active class on tab buttons
+				$(this).parent().addClass("current");
+				$(this).parent().siblings().removeClass("current");
+				// display only active tab content
+				var activeTab = $(this).attr("href");
+				$('.tab-content').not(activeTab).css("display","none");
+				$(activeTab).fadeIn();
+			});
+		});
+	</script>
+</html>
