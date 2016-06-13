@@ -1,0 +1,42 @@
+<html>
+	<body>
+		<label for="setNumber">Enter Number Here</label>
+		<input id="setNumber" type="text" >
+
+		<p>You Entered:<span id="printNumber"></span></p>
+
+		<button id="nextPageButton">Next Page</button>
+	</body>
+	<script src="../jquery.min.js"></script>
+	<script>
+	$(document).ready(function() {
+
+		// Listen for keyboard input event
+		storeNumber();
+        $("#setNumber").on("keydown keyup", function () {
+          storeNumber();
+        });
+
+		// Get number from input
+		function storeNumber(){
+			var storedNumber = document.getElementById('setNumber').value;
+			
+			// Print a confirmation to the user 
+			if (!isNaN(storedNumber)) {
+				$('#printNumber').html(" " + storedNumber);
+			}
+			else {
+				$('#printNumber').html(" Please enter a number");	
+			}
+
+		};
+
+		// Set number to localStorage and navigate to next screen
+		$('#nextPageButton').click(function () {
+		    localStorage.setItem('storedNumber', $('#printNumber').text());
+
+		    window.location = '2-get-values.html';
+	    });
+	});
+	</script>
+</html>

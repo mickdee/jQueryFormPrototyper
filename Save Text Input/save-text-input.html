@@ -3,19 +3,27 @@
 		<div>
 			<textarea id="newNote" placeholder="Enter Note Here"></textarea>
 		</div>	
-		<a id="submitNote" href="#">ADD NOTE</a>
+		<button id="submitNote" href="#" disabled="disabled">ADD NOTE</button>
 		<div id="historyContainer"></div>
 	</body>
 	<script src="../jquery.min.js"></script>
 	<script>
 		$(document).ready(function() {
+
+			// Enable add button after user enters a note
+			$('textarea#newNote').change(function() {
+				$('#submitNote').prop("disabled", false);
+			}); 
+
 			// Save note to notes history
 			$('#submitNote').click(function() {
 		        var noteText = $('textarea#newNote').val();
 		        $('textarea#newNote').val('');
+		        $('#submitNote').prop("disabled", true);
 		        $('#historyContainer').prepend("<p></p>")
 		        $("#historyContainer p:first").html("<span>The Cow Says:</span></span>" + "</br>" + noteText);
 	  		});
+
 		});
 	</script>	
 </html>
