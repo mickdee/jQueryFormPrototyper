@@ -15,4 +15,4 @@ Either copy and paste an example into your prototype and style away (make sure t
 + Save note to a log: https://jsfiddle.net/vqqyhoxr/3/
 + Show and hide a dropdown area: https://jsfiddle.net/mickdee/dL0rnbb8/5/
 + Switch between tabs: https://jsfiddle.net/mickdee/51y5xrsr/
-+ Send data from one page to another: Download or clone repo and start with Page 1 of 'Set and Get Data example'
++ Send data from one screen to another: Download or clone repo and start with Page 1 of 'Set and Get Data' example
