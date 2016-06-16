@@ -1,0 +1,25 @@
+<html>
+	<body>
+		<label>Type a number here</label>
+		<input id="enterNumber" type="text">
+		<p>Your number times 5 is: <span id="multipliedNumber"></span></p>
+	</body>
+	<script src="../jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			// Save value from input
+			$('#enterNumber').change(function() {
+				var savedNumber = $('#enterNumber').val();
+
+				if (!isNaN(savedNumber)) {
+					$('#multipliedNumber').html(" " + savedNumber*5);
+				}
+				else {
+					$('#multipliedNumber').html(" Please enter a number");	
+				}
+				
+			});
+			
+		});
+	</script>
+</html>
