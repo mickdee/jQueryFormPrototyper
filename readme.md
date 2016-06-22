@@ -34,5 +34,9 @@ Either copy and paste an example into your prototype and style away (make sure t
 **jsfiddle:** https://jsfiddle.net/mickdee/51y5xrsr/
 ![Tab Switching Animation](/SwitchBetweenTabs/tabs.gif?raw=true "Tab Switching Animation")
 
-+ Proceed to next step: https://jsfiddle.net/mickdee/o07z4jsg/
-+ Send data from one screen to another: Download or clone repo and start with Page 1 of 'Set and Get Data' example
+####Enable proceed to next step button after picking an item
+**jsfiddle:** https://jsfiddle.net/mickdee/o07z4jsg/1/
+![Proceed Enable Animation](/ProceedNextStep/proceed.gif?raw=true "Proceed Enable Animation")
+
+####Send data from one screen to another 
+Download or clone repo and start with Page 1 of 'Set and Get Data' example
