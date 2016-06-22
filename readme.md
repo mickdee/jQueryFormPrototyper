@@ -11,7 +11,7 @@ Either copy and paste an example into your prototype and style away (make sure t
 
 #Examples
 ####Send form data from one screen to another 
-Make a prototype feel real by passing data between screens. Download or clone repo and start with Page 1 of 'Set and Get Data' example.
+Make a prototype feel real by passing data between screens using localStorage. Download or clone this repo and start with Page 1 of 'Set and Get Data' example.
 
 ![Set and Get Data Animation](/SetAndGetData/setandgetdata.gif?raw=true "Set and Get Data Animation")
 
@@ -30,7 +30,7 @@ Make a prototype feel real by passing data between screens. Download or clone re
 
 ![Save Note Animation](/SaveTextInput/addnote.gif?raw=true "Save Note Animation")
 
-####Do simple math on number input by user 
+####Do simple math on a number input by user 
 **jsfiddle:** https://jsfiddle.net/mickdee/Lu5bz4gb/1/
 
 ![Input Multiply Animation](/InputMultiply/multiply.gif?raw=true "Input Multiply Animation")
@@ -40,12 +40,12 @@ Make a prototype feel real by passing data between screens. Download or clone re
 
 ![Show and Hide Animation](/ShowHide/showhide.gif?raw=true "Show and Hide Animation")
 
-####Switch between tabs 
+####Switch between tabs on a screen 
 **jsfiddle:** https://jsfiddle.net/mickdee/51y5xrsr/
 
 ![Tab Switching Animation](/SwitchBetweenTabs/tabs.gif?raw=true "Tab Switching Animation")
 
-####Enable proceed to next step button after picking an item
+####Enable proceed button after picking an item
 **jsfiddle:** https://jsfiddle.net/mickdee/o07z4jsg/1/
 
 ![Proceed Enable Animation](/ProceedNextStep/proceed.gif?raw=true "Proceed Enable Animation")
