@@ -11,7 +11,7 @@
 		$(document).ready(function() {
 
 			// Enable add button after user enters a note
-			$('textarea#newNote').change(function() {
+			$('textarea#newNote').keydown(function() {
 				$('#submitNote').prop("disabled", false);
 			}); 
 

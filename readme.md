@@ -12,13 +12,16 @@ Either copy and paste an example into your prototype and style away (make sure t
 #Examples
 ####Add and remove items to a table
 **jsfiddle:** https://jsfiddle.net/mickdee/9j6gvu4z/4/
-![Add and Remove Items](/AddRemoveItems/add-remove-item.gif?raw=true "Add and Remove Items")
+![Add and Remove Items Animation](/AddRemoveItems/add-remove-item.gif?raw=true "Add and Remove Items Animation")
  
 ####Receive feedback when selecting an item from a list 
 **jsfiddle:** https://jsfiddle.net/mickdee/676txarx/2/
-![Feedback After Selection](/FeedbackAfterSelection/feedback.gif?raw=true "Feedback After Selection")
+![Feedback After Selection Animation](/FeedbackAfterSelection/feedback.gif?raw=true "Feedback After Selection Animation")
 
-+ Save note to a log: https://jsfiddle.net/vqqyhoxr/3/
+####Save note to a log: 
+**jsfiddle:** https://jsfiddle.net/vqqyhoxr/3/
+![Save Note Animation](/SaveTextInput/addnote.gif?raw=true "Save Note Animation")
+
 + Do simple math on number input by user: https://jsfiddle.net/mickdee/Lu5bz4gb/
 + Show and hide a dropdown area: https://jsfiddle.net/mickdee/dL0rnbb8/5/
 + Switch between tabs: https://jsfiddle.net/mickdee/51y5xrsr/
