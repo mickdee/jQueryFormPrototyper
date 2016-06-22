@@ -23,7 +23,7 @@ Either copy and paste an example into your prototype and style away (make sure t
 ![Save Note Animation](/SaveTextInput/addnote.gif?raw=true "Save Note Animation")
 
 ####Do simple math on number input by user 
-**jsfiddle:** https://jsfiddle.net/mickdee/Lu5bz4gb/
+**jsfiddle:** https://jsfiddle.net/mickdee/Lu5bz4gb/1/
 ![Input Multiply Animation](/InputMultiply/multiply.gif?raw=true "Input Multiply Animation")
 
 + Show and hide a dropdown area: https://jsfiddle.net/mickdee/dL0rnbb8/5/
