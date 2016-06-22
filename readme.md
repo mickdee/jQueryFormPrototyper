@@ -26,7 +26,7 @@ Make a prototype feel real by passing data between screens. Download or clone re
 ![Feedback After Selection Animation](/FeedbackAfterSelection/feedback.gif?raw=true "Feedback After Selection Animation")
 
 ####Save note to a log 
-**jsfiddle:** https://jsfiddle.net/vqqyhoxr/3/
+**jsfiddle:** https://jsfiddle.net/mickdee/vqqyhoxr/4/
 
 ![Save Note Animation](/SaveTextInput/addnote.gif?raw=true "Save Note Animation")
 
