@@ -11,8 +11,7 @@ Either copy and paste an example into your prototype and style away (make sure t
 
 #Examples
 ####Send form data from one screen to another 
-Make a prototype feel real by passing data between screens.
-Download or clone repo and start with Page 1 of 'Set and Get Data' example.
+Make a prototype feel real by passing data between screens. Download or clone repo and start with Page 1 of 'Set and Get Data' example.
 ![Set and Get Data Animation](/SetAndGetData/setandgetdata.gif?raw=true "Set and Get Data Animation")
 
 ####Add and remove items to a table
