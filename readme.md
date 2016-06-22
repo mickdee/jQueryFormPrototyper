@@ -20,6 +20,11 @@ Make a prototype feel real by passing data between screens using localStorage. D
 
 ![Add and Remove Items Animation](/AddRemoveItems/add-remove-item.gif?raw=true "Add and Remove Items Animation")
  
+####Show total price and remaining inventory
+**jsfiddle:** https://jsfiddle.net/mickdee/6reatja9/1/
+
+![Calc Price Animation](/CalculateTotalPrice/calculatetotal.gif?raw=true "Calc Price Animation")
+
 ####Receive feedback when selecting an item from a list 
 **jsfiddle:** https://jsfiddle.net/mickdee/676txarx/2/
 

@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<style>
+			th {
+				padding: 0px 40px;
+			}
+			td {
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+			<thead>
+				<th>Item</th>
+				<th>Price</th>
+				<th>Stock</th>
+				<th>Enter Quantity</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td id="item1"></td>
+					<td id="item1Price"></td>
+					<td id="item1Stock"></td>
+					<td><input type="text" id="item1Qty"></td>
+				</tr>
+			</tbody>
+		</table>
+		<p>Total Price: <span id="totalPrice"></span></p>
+	</body>
+	<script src="../jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			
+			var item1 = 'Ray Gun'
+			var item1Stock = 50
+			var item1Price = '5.99'
+			
+			$('#item1').html(item1);
+			$('#item1Stock').html(item1Stock);
+			$('#item1Price').html('$' + item1Price);
+
+			// Listen for input on Qty field and run calc function
+			$('#item1Qty').on('keydown keyup', function() {
+				calculateTotal();
+			});
+
+			// Define calc function
+			function calculateTotal() {
+				var item1Qty = document.getElementById('item1Qty').value;
+				var totalPrice = (parseInt(item1Qty) * parseFloat(item1Price)).toFixed(2);
+				
+				if (!isNaN(totalPrice)) {
+					$('#totalPrice').html('$' + totalPrice);
+					// Show reduced Quantity
+					var reducedStock = item1Stock - item1Qty;
+					$('#item1Stock').html(reducedStock);
+				}
+				else {
+					$('#totalPrice').html('');
+					$('#item1Stock').html(item1Stock); 	
+				}
+			};
+		});
+	</script>
+</html>
