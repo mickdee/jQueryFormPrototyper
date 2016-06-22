@@ -17,28 +17,35 @@ Make a prototype feel real by passing data between screens. Download or clone re
 
 ####Add and remove items to a table
 **jsfiddle:** https://jsfiddle.net/mickdee/9j6gvu4z/4/
+
 ![Add and Remove Items Animation](/AddRemoveItems/add-remove-item.gif?raw=true "Add and Remove Items Animation")
  
 ####Receive feedback when selecting an item from a list 
 **jsfiddle:** https://jsfiddle.net/mickdee/676txarx/2/
+
 ![Feedback After Selection Animation](/FeedbackAfterSelection/feedback.gif?raw=true "Feedback After Selection Animation")
 
 ####Save note to a log 
 **jsfiddle:** https://jsfiddle.net/vqqyhoxr/3/
+
 ![Save Note Animation](/SaveTextInput/addnote.gif?raw=true "Save Note Animation")
 
 ####Do simple math on number input by user 
 **jsfiddle:** https://jsfiddle.net/mickdee/Lu5bz4gb/1/
+
 ![Input Multiply Animation](/InputMultiply/multiply.gif?raw=true "Input Multiply Animation")
 
 ####Show and hide a dropdown area 
 **jsfiddle:** https://jsfiddle.net/mickdee/dL0rnbb8/5/
+
 ![Show and Hide Animation](/ShowHide/showhide.gif?raw=true "Show and Hide Animation")
 
 ####Switch between tabs 
 **jsfiddle:** https://jsfiddle.net/mickdee/51y5xrsr/
+
 ![Tab Switching Animation](/SwitchBetweenTabs/tabs.gif?raw=true "Tab Switching Animation")
 
 ####Enable proceed to next step button after picking an item
 **jsfiddle:** https://jsfiddle.net/mickdee/o07z4jsg/1/
+
 ![Proceed Enable Animation](/ProceedNextStep/proceed.gif?raw=true "Proceed Enable Animation")
