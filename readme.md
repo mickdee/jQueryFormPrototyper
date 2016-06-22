@@ -30,6 +30,9 @@ Either copy and paste an example into your prototype and style away (make sure t
 **jsfiddle:** https://jsfiddle.net/mickdee/dL0rnbb8/5/
 ![Show and Hide Animation](/ShowHide/showhide.gif?raw=true "Show and Hide Animation")
 
-+ Switch between tabs: https://jsfiddle.net/mickdee/51y5xrsr/
+####Switch between tabs 
+**jsfiddle:** https://jsfiddle.net/mickdee/51y5xrsr/
+![Tab Switching Animation](/SwitchBetweenTabs/tabs.gif?raw=true "Tab Switching Animation")
+
 + Proceed to next step: https://jsfiddle.net/mickdee/o07z4jsg/
 + Send data from one screen to another: Download or clone repo and start with Page 1 of 'Set and Get Data' example
