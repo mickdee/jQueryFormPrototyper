@@ -1,0 +1,23 @@
+<html>
+	<body>
+		<label for="">Pick Something:</label>
+		<select name="" id="itemPicker">
+			<option value="" disabled="disabled" selected="selected">Choose something</option>
+			<option value="">pizza</option>
+			<option value="">taco</option>
+			<option value="">burger</option>
+			<option value="">nachos</option>
+		</select>
+		<p>
+			<button id="nextStep" disabled="true">Proceed</button>
+		</p>
+	</body>
+	<script src="../jquery.min.js"></script>
+	<script>	
+		$(document).ready(function(){
+			$('#itemPicker').change(function() {
+				$('#nextStep').prop('disabled',false);
+			});
+		});
+	</script>
+</html>

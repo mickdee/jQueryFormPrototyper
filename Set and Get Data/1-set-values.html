@@ -5,28 +5,30 @@
 
 		<p>You Entered:<span id="printNumber"></span></p>
 
-		<button id="nextPageButton">Next Page</button>
+		<button id="nextPageButton" disabled="true">Next Page</button>
 	</body>
 	<script src="../jquery.min.js"></script>
 	<script>
 	$(document).ready(function() {
 
 		// Listen for keyboard input event
-		storeNumber();
         $("#setNumber").on("keydown keyup", function () {
           storeNumber();
         });
 
 		// Get number from input
 		function storeNumber(){
+
 			var storedNumber = document.getElementById('setNumber').value;
 			
 			// Print a confirmation to the user 
-			if (!isNaN(storedNumber)) {
+			if (!isNaN(storedNumber) && storedNumber > 0) {
 				$('#printNumber').html(" " + storedNumber);
+				$("#nextPageButton").prop('disabled',false);
 			}
 			else {
-				$('#printNumber').html(" Please enter a number");	
+				$('#printNumber').html(" Please enter a number greater than 0");
+				$("#nextPageButton").prop('disabled',true);	
 			}
 
 		};

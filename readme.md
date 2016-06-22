@@ -13,7 +13,7 @@ Either copy and paste an example into your prototype and style away (make sure t
 + Add and remove items to a table: https://jsfiddle.net/mickdee/9j6gvu4z/4/
 + Receive feedback when selecting an item from a list: https://jsfiddle.net/mickdee/676txarx/2/
 + Save note to a log: https://jsfiddle.net/vqqyhoxr/3/
-+ Do simple math on number input:
++ Do simple math on number input by user:
 + Show and hide a dropdown area: https://jsfiddle.net/mickdee/dL0rnbb8/5/
 + Switch between tabs: https://jsfiddle.net/mickdee/51y5xrsr/
 + Send data from one screen to another: Download or clone repo and start with Page 1 of 'Set and Get Data' example
