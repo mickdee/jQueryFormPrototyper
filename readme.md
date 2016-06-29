@@ -54,3 +54,6 @@ Make a prototype feel real by passing data between screens using localStorage. D
 **jsfiddle:** https://jsfiddle.net/mickdee/o07z4jsg/1/
 
 ![Proceed Enable Animation](/ProceedNextStep/proceed.gif?raw=true "Proceed Enable Animation")
+
+####Show the current date
+**jsfiddle:** https://jsfiddle.net/mickdee/jvuvyxLg/1/
