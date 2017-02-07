@@ -55,5 +55,10 @@ Make a prototype feel real by passing data between screens using localStorage. D
 
 ![Proceed Enable Animation](/ProceedNextStep/proceed.gif?raw=true "Proceed Enable Animation")
 
+####Filter a table
+**jsfiddle:** http://jsfiddle.net/mickdee/rz5w3jvh/
+
+![Filter Table Animation](/FilterTable/filter-table.gif?raw=true "Filter Table Animation")
+
 ####Show the current date
 **jsfiddle:** https://jsfiddle.net/mickdee/jvuvyxLg/1/
