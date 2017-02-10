@@ -1,0 +1,58 @@
+<html>
+	<body>
+	<p><span id="numberSelected">0</span> Selected</p>
+	<table>
+	    <thead>
+	        <tr>
+	        	<th></th>
+	            <th>Animal</th>
+	            <th>Count</th>
+	        </tr>
+	    </thead>
+	    <tbody id="fbody">
+	        <tr>
+	        	<td><input type="checkbox"></td>
+	            <td>cat</td>
+	            <td>1</td>
+	        </tr>
+	        <tr>
+	        	<td><input type="checkbox"></td>
+	            <td>dog</td>
+	            <td>5</td>
+	        </tr>
+	        <tr>
+	        	<td><input type="checkbox"></td>
+	            <td>cat</td>
+	            <td>3</td>
+	        </tr>
+	        <tr>
+	        	<td><input type="checkbox"></td>
+	            <td>moose</td>
+	            <td>5</td>
+	        </tr>
+	        <tr>
+	        	<td><input type="checkbox"></td>
+	            <td>mouse</td>
+	            <td>6</td>
+	        </tr>
+	        <tr>
+	        	<td><input type="checkbox"></td>
+	            <td>dog</td>
+	            <td>3</td>
+	        </tr>
+	    </tbody>
+	</table>
+	</body>
+	<script src="../jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+
+			var countChecked = function(){
+				var n = $("input:checked").length;
+				$("#numberSelected").html(n);
+			};
+			countChecked();
+			$("input[type=checkbox]").on("click", countChecked);
+		});
+	</script>
+</html>

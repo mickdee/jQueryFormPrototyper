@@ -60,5 +60,9 @@ Make a prototype feel real by passing data between screens using localStorage. D
 
 ![Filter Table Animation](/FilterTable/filter-table.gif?raw=true "Filter Table Animation")
 
+####Count selected items in a table
+**jsfiddle:** http://jsfiddle.net/mickdee/fyhmL9u0/
+![Count Checked Animation](/SelectItemsInTable/count-selected.gif?raw=true "Count Checked Animation")
+
 ####Show the current date
 **jsfiddle:** https://jsfiddle.net/mickdee/jvuvyxLg/1/
