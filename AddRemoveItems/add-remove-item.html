@@ -11,13 +11,19 @@
 	$(document).ready(function() {
 		
 		// Add a new table row item on click
+		
+		i = 1;
+
 		$('#addItem').click(function(){
-			$('#itemsTable').append("<tr class='new-item-row'><td>Item Name</td><td><a href='#' class='remove-item'>REMOVE</a></td></tr>");
+
+			$('#itemsTable').append("<tr class='new-item-row'><td>Item</td><td id='itemID'>" + i + "</td><td><a href='#' class='remove-item'>REMOVE</a></td></tr>");
 
 			// Remove the associated (closest) table row item on click
 			$('.remove-item').click(function() {
 				$(this).closest(".new-item-row").remove();
 			});
+
+			i++;
 		});
 	});
 	</script>
