@@ -1,0 +1,48 @@
+@import 'variables';
+
+h1,
+.h1 {
+  font-size: $base-unit * 5;
+  @extend .mbxxl;
+}
+
+h2,
+.h2 {
+  font-size: $base-unit * 4;
+}
+
+h3,
+.h3 {
+  font-size: $base-unit * 3;
+}
+
+h4,
+.h4 {
+  font-size: $base-unit * 2;
+}
+
+
+.t10 {
+  font-size: $base-unit * 2;
+}
+
+.t20 {
+  font-size: $base-unit * 1.5;
+}
+
+.t30 {
+  font-size: $base-unit;
+}
+
+h1,h2,h3,h4,h5 {
+	color: $gray-1;
+	font-weight: bold;
+}
+
+body {
+	color: $gray-2;
+}
+
+p, .text-muted {
+	color: $gray-5 !important;
+}

@@ -1,0 +1,36 @@
+// text
+
+@import 'colors';
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.small-caps {
+  font-variant: small-caps;
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.txt-l {
+  text-align: left;
+}
+
+.txt-r {
+  text-align: right;
+}
+
+.txt-c {
+  text-align: center;
+}

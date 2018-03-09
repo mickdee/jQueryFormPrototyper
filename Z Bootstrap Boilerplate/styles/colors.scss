@@ -1,0 +1,44 @@
+// Accent colors - teal for now
+// -------------------------
+
+$teal-1:  hsla(176, 73%, 12%, 1);
+$teal-2:  hsla(176, 75%, 17%, 1);
+$teal-3:  hsla(176, 96%, 18%, 1);
+$teal-4:  hsla(176, 74%, 23%, 1);
+$teal-5:  hsla(176, 100%, 23%, 1);
+$teal-6:  hsla(176, 74%, 29%, 1);
+$teal-7:  hsla(176, 74%, 35%, 1);
+$teal-8:  hsla(176, 100%, 33%, 1);
+$teal-9:  hsla(176, 74%, 40%, 1);
+$teal-10: hsla(176, 74%, 46%, 1);
+$teal-11: hsla(176, 100%, 93%, 1);
+
+$gray-1:  hsla(0, 0%, 16%, 1);
+$gray-2:  hsla(0, 0%, 26%, 1);
+$gray-3:  hsla(0, 0%, 41%, 1);
+$gray-4:  hsla(0, 0%, 55%, 1);
+$gray-5:  hsla(0, 0%, 71%, 1);
+$gray-6:  hsla(0, 0%, 77%, 1);
+$gray-7:  hsla(0, 0%, 84%, 1);
+$gray-8:  hsla(0, 0%, 89%, 1);
+$gray-9:  hsla(0, 0%, 93%, 1);
+$gray-10: hsla(0, 0%, 97%, 1);
+$gray-11: hsla(0, 0%, 100%, 1);
+
+$brand-1:               $teal-1;
+$brand-2:               $teal-2;
+$brand-3:               $teal-3;
+$brand-4:               $teal-4;
+$brand-5:               $teal-5;
+$brand-6:               $teal-6;
+$brand-7:               $teal-7;
+$brand-8:               $teal-8;
+$brand-9:               $teal-9;
+$brand-10:              $teal-10;
+$brand-11:              $teal-11;
+
+$brand-primary:         hsla(199, 77%, 45%, 1) !default;
+$brand-success:         hsla(120, 39%, 54%, 1) !default;
+$brand-warning:         hsla(35, 84%, 62%, 1) !default;
+$brand-danger:          hsla(0, 46%, 62%, 1) !default;
+$brand-info:            hsla(194, 66%, 61%, 1) !default;

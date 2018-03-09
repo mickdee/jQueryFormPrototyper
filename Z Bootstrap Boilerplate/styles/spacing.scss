@@ -1,0 +1,58 @@
+@import 'variables';
+
+// Whitespace
+
+$whitespace-s:        $base-unit / 4;
+$whitespace-m:        $base-unit / 2;
+$whitespace-l:        $base-unit;
+$whitespace-xl:       $base-unit * 2;
+$whitespace-xxl:      $base-unit * 3;
+$whitespace-xxxl:     $base-unit * 4;
+$whitespace-xxxxl:    $base-unit * 5;
+
+$whitespace-keys: (p padding, m margin, a '', v -top -bottom, h -left -right, t -top, r -right, b -bottom, l -left);
+
+@function expand-whitespace-key($k) {
+  @each $pair in $whitespace-keys {
+    $short: nth($pair, 1);
+    $long: nth($pair, 2);
+    // v and h need to pass in 2 parameters
+    @if (length($pair) == 3) {
+      $long: (nth($pair, 2) nth($pair, 3));
+    }
+    @if $short == $k {
+      @return $long;
+    }
+  }
+  @warn 'Couldn\'t expand #{$k}';
+  @return $k;
+}
+
+$types: (p, m); // padding,margin
+$locations: (a, v, h, t, r, b, l); // all,top,right,bottom,left,horizontal,vertical
+$t-shirt-sizes: (n, s, m, l, xl, xxl, xxxl, xxxxl);
+
+@mixin whitespace($units: ()) {
+  $units: join(0, $units);
+
+  @for $i from 1 through length($units) {
+    $t-shirt-size: nth($t-shirt-sizes, $i);
+    $size: nth($units, $i);
+
+    @each $location in $locations {
+      @each $type in $types {
+        .#{$type}#{$location}#{$t-shirt-size} {
+          @each $whitespace-location in expand-whitespace-key($location) {
+            #{expand-whitespace-key($type)}#{$whitespace-location}: $size !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include whitespace(($whitespace-s, $whitespace-m, $whitespace-l, $whitespace-xl, $whitespace-xxl, $whitespace-xxxl, $whitespace-xxxxl));
+
+.full-height {
+  height: 100%;
+}

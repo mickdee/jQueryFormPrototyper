@@ -1,0 +1,49 @@
+// Global Element
+
+body {
+	background-color: $gray-10;
+}
+
+// Navbar
+
+.navbar-brand {
+	font-weight: bold;
+}
+
+// Text
+
+.txt-white {
+	color: white !important;
+}
+
+.txt-teal {
+	color: $teal-9 !important;	
+}
+
+// Form
+
+.form-section {
+	background-color: $gray-10;
+	border-top: 1px solid $gray-8;
+	border-bottom: 1px solid $gray-8; 
+}
+
+// Card
+
+.card {
+	@extend .paxxl, .mvxxxxl;
+}
+
+// Button
+
+.bg-teal, .btn-primary {
+	background-color: $teal-9;
+}
+
+.btn-primary {
+	border: none;
+	text-transform: uppercase;
+	&:hover {
+		background-color: $teal-7;
+	} 
+}
