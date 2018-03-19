@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Form Template</title>
+    <title>Login Form Template</title>
     <style>
       .debug {
         border: 1px solid #FF0000;
@@ -28,16 +28,19 @@
               <h2 class="mb-4">Login</h2>
               <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+              </div>
+              <div id="invalidEmailFeedback" class="invalid-feedback">
+                Enter an Email address.
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>
                 <input type="password" class="form-control" id="inputPassword" placeholder="Password">
               </div>
-              <button type="submit" id="loginSubmit" class="btn btn-primary mt-3 float-right text-uppercase">Submit</button>
               <div id="invalidFeedback" class="invalid-feedback">
                 Password Invalid.
               </div>
+              <button type="submit" id="loginSubmit" class="btn btn-primary mt-3 float-right text-uppercase">Submit</button>
             </form>
           </div>
           <div class="col col-md-3"></div>
@@ -58,6 +61,16 @@
           $('#inputPassword').removeClass('is-invalid')
           $('#inputPassword').addClass('is-valid')
           $('#invalidFeedback').css('display','none')
+        }
+        if($('#inputEmail').val().length < 1){
+          $('#inputEmail').addClass('is-invalid')
+          $('#invalidEmailFeedback').css('display','block')
+        } else {
+          $('#inputEmail').removeClass('is-invalid')
+          $('#inputEmail').addClass('is-valid')
+        }
+        if($('#inputPassword').val().length >= 8 && $('#inputEmail').val().length >= 1){
+          window.location='logged-in.html';
         }
       })
     </script>
