@@ -71,7 +71,7 @@
           }
         });
         if($('#inputPassword').val().length >= 8 && $('#inputUserName').val().length >= 1){
-          localStorage.setItem('storedUserName',$('#inputUserName').val());
+          //here we're going to set the value of #inputUserName to localStorage so that we can retrieve it and display on the next screen
           window.location='logged-in.html';
         }
       })
