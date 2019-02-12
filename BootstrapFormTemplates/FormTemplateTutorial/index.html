@@ -7,75 +7,34 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Login Form Template</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="#">OneCoolApp</a>
-    </nav>
-
-    <div class="container-fluid">
-      <div class="row">
-          <div class="col col-md-3"></div>
-          <div class="col col-md-6">
-            <form class="mt-5 clearfix">
-              <h2 class="mb-4">Login</h2>
-              <div class="form-group">
-                <label for="exampleinputUserName1">User Name</label>
-                <input type="text" class="form-control" id="inputUserName" aria-describedby="emailHelp" placeholder="Enter user name">
-              </div>
-              <div id="invalidUserNameFeedback" class="invalid-feedback">
-                Enter your user name.
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-              </div>
-              <div id="invalidFeedback" class="invalid-feedback">
-                Password Invalid.
-              </div>
-              <button type="submit" id="loginSubmit" class="btn btn-primary mt-3 float-right text-uppercase">Submit</button>
-            </form>
-          </div>
-          <div class="col col-md-3"></div>
-      </div>
-    </div>
-    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>
-      $("#loginSubmit").click(function(){
-        event.preventDefault();
-        if($('#inputPassword').val().length < 8){
-          $('#inputPassword').addClass('is-invalid')
-          $('#invalidFeedback').css('display','block')
-        }
-        if($('#inputUserName').val().length < 1){
-          $('#inputUserName').addClass('is-invalid')
-          $('#invalidUserNameFeedback').css('display','block')
-        }
-        $('#inputPassword').blur(function() {
-          if($('#inputPassword').val().length >= 8) {
-            $('#inputPassword').removeClass('is-invalid')
-            $('#inputPassword').addClass('is-valid')
-            $('#invalidFeedback').css('display','none')   
-          }
-        });
-        $('#inputUserName').blur(function(){
-          if($('#inputUserName').val().length > 1){
-            $('#inputUserName').removeClass('is-invalid')
-            $('#inputUserName').addClass('is-valid')
-            $('#invalidUserNameFeedback').css('display','none')
-          }
-        });
-        if($('#inputPassword').val().length >= 8 && $('#inputUserName').val().length >= 1){
-          //here we're going to set the value of #inputUserName to localStorage so that we can retrieve it and display on the next screen
-          //localStorage.setItem('',);
-          window.location='logged-in.html';
-        }
-      })
-    </script>
+
+    <title>Login Form Template</title>
+
+    <style>
+      .debug {
+        border: 1px solid #FF0000;
+        background-color: rgba(255,0,0,0.2);
+      }
+    </style>
+    
+  </head>
+  <body>
+  <!-- Let's put a Bootstrap navbar here with a title for our app -->
+
+  <!-- We'll need a container-fluid to place here for our login form -->
+  <!-- And inside that a row -->
+  <!-- And inside the row 3 columns: col-md-3, col-md-6, col-md-3 -->
+  <!-- Inside the center col-md-6, we'll put a simple login form with 2 inputs: user name, password, and a login button -->
+  
+  <script>
+    // GIVEN I want to login
+    // WHEN I click the login button
+    // THEN I should be taken to a landing page
+    // AND I should see my user name displayed back to me as feedback that the system recognizes me
+  </script>
   </body>
 </html>

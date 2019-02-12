@@ -7,51 +7,29 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
     <title>Login Form Template</title>
+
     <style>
       .debug {
         border: 1px solid #FF0000;
         background-color: rgba(255,0,0,0.2);
       }
     </style>
+
   </head>
   <body>
-    <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">OneCoolApp</a>
-    </nav>
+  <!-- Duplicate the page structure from the previous screen: navbar, container, row, and columns -->
+  <!-- In the center column, add a Bootstrap alert bar that prints a welcome message with the user name displayed -->
 
-    <div class="container-fluid">
-      <div class="row">
-          <div class="col col-md-3"></div>
-          <div class="col col-md-6">
-            <div class="alert alert-warning alert-dismissible fade show mt-5" role="alert">
-              <strong>Welcome<!-- username here -->! You're logged in.
-              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-          </div>
-          <div class="col col-md-3"></div>
-      </div>
-    </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>
-      //Document.ready() is a common wrapper for jQuery code -- it essentially tells the scripts you write inside it to wait for the the document to be completely loaded before running
-      $(document).ready(function() {
-          //First, we need to get 'storedUserName' from local storage and set it to a variable so that we can use that variable in our javascript code:
-          //localStorage.getItem();
-          
-          //Next, we need to print 'storedUserName' to an HTML element
-      });
-      //Here we'll add some click event listeners to two radio buttons that trigger a slideDown() / slideUp() animation
-
-      //We'll also add a more generic event listener to both radio buttons that will enable our form to be submitted after one of them is clicked
-
-      //Lastly, we'll add a click listener to our submit button that uses delay() fadeOut() and fadeIn() to show a success message
-    </script>
+  <script>
+  // GIVEN I'm logged in
+  // WHEN I land on the page
+  // THEN I want to see my user name displayed to me so that I have feedback that the system recognizes me
+  </script>
   </body>
 </html>
